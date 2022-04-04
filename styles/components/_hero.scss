@@ -14,6 +14,7 @@
     &__col {
         width: 50%;
         margin-left: 50px;
+
         @include b(tablet) {
             width: 100%;
             margin-left: 0;
@@ -23,14 +24,21 @@
     &__img-box {
         display: block;
         line-height: 0;
-        width: 150px;
+        width: 120px;
         border-radius: 50%;
         overflow: hidden;
+        box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
     }
 
     &__img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+
+    &__caption {
+        @include b(tablet) {
+            text-align: center;
+        }
     }
 }
